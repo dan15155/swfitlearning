@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="96w-p4-3gb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--关注-->
+        <scene sceneID="UH1-MI-79M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="96w-p4-3gb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="关注" image="tabbar_btn_news_nor" selectedImage="tabbar_btn_news_sel" id="Z55-dh-kBi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oq9-Fp-V6J">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zf9-Ah-fMF" kind="relationship" relationship="rootViewController" id="XRg-QB-AiP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRC-4e-aY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.8" y="-582.45877061469275"/>
+        </scene>
+        <!--Focus On View Controller-->
+        <scene sceneID="gjd-kg-RVW">
+            <objects>
+                <viewController id="Zf9-Ah-fMF" customClass="FocusOnViewController" customModule="doYu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tiP-3R-ZGP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Vh4-D3-uvn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nr6-bB-BdZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HGp-QA-xaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3002" y="-582"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_btn_news_nor" width="24" height="24"/>
+        <image name="tabbar_btn_news_sel" width="24" height="24"/>
+    </resources>
+</document>
