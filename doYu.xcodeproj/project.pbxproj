@@ -22,6 +22,7 @@
 		BAADE7C421C394C2006AC045 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE7C321C394C2006AC045 /* LiveViewController.swift */; };
 		BAADE7C621C394DB006AC045 /* FocusOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE7C521C394DB006AC045 /* FocusOnViewController.swift */; };
 		BAADE7C821C394EB006AC045 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE7C721C394EB006AC045 /* MeViewController.swift */; };
+		BAADE7D021C3A30C006AC045 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE7CF21C3A30C006AC045 /* UIBarButtonItem-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +60,11 @@
 		BAADE7BB21C3914E006AC045 /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 		BAADE7BD21C3918C006AC045 /* FocusOn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FocusOn.storyboard; sourceTree = "<group>"; };
 		BAADE7BF21C391AF006AC045 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
-		BAADE7C121C39484006AC045 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = doYu/HomeViewController.swift; sourceTree = "<group>"; };
+		BAADE7C121C39484006AC045 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BAADE7C321C394C2006AC045 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		BAADE7C521C394DB006AC045 /* FocusOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusOnViewController.swift; sourceTree = "<group>"; };
 		BAADE7C721C394EB006AC045 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		BAADE7CF21C3A30C006AC045 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +147,12 @@
 		BAADE7B321C388B9006AC045 /* Ca */ = {
 			isa = PBXGroup;
 			children = (
+				BAADE7CC21C39A6E006AC045 /* Main */,
 				BAADE7B421C388CF006AC045 /* Home */,
 				BAADE7B521C388D8006AC045 /* Live */,
 				BAADE7B621C388E3006AC045 /* FocusOn */,
 				BAADE7B721C3890C006AC045 /* Me */,
+				BAADE7CD21C3A288006AC045 /* Tools */,
 			);
 			path = Ca;
 			sourceTree = "<group>";
@@ -156,8 +160,9 @@
 		BAADE7B421C388CF006AC045 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				BAADE7B821C39123006AC045 /* Home.storyboard */,
-				BAADE7C121C39484006AC045 /* HomeViewController.swift */,
+				BAADE7CB21C39A04006AC045 /* Controller */,
+				BAADE7CA21C399FC006AC045 /* view */,
+				BAADE7C921C399E8006AC045 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -187,6 +192,52 @@
 				BAADE7C721C394EB006AC045 /* MeViewController.swift */,
 			);
 			path = Me;
+			sourceTree = "<group>";
+		};
+		BAADE7C921C399E8006AC045 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAADE7CA21C399FC006AC045 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BAADE7CB21C39A04006AC045 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BAADE7C121C39484006AC045 /* HomeViewController.swift */,
+				BAADE7B821C39123006AC045 /* Home.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BAADE7CC21C39A6E006AC045 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BAADE7CD21C3A288006AC045 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BAADE7CE21C3A2A0006AC045 /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		BAADE7CE21C3A2A0006AC045 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BAADE7CF21C3A30C006AC045 /* UIBarButtonItem-Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +381,7 @@
 				BAADE7C421C394C2006AC045 /* LiveViewController.swift in Sources */,
 				BAADE7C221C39484006AC045 /* HomeViewController.swift in Sources */,
 				BAADE7C621C394DB006AC045 /* FocusOnViewController.swift in Sources */,
+				BAADE7D021C3A30C006AC045 /* UIBarButtonItem-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
