@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAA6D7CE21C7757C00184429 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6D7CD21C7757C00184429 /* Common.swift */; };
+		BAA6D7D221C791A600184429 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6D7D121C791A600184429 /* UIColor-Extension.swift */; };
 		BAADE78621C388AF006AC045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE78521C388AF006AC045 /* AppDelegate.swift */; };
 		BAADE78821C388AF006AC045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE78721C388AF006AC045 /* ViewController.swift */; };
 		BAADE78B21C388AF006AC045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAADE78921C388AF006AC045 /* Main.storyboard */; };
@@ -23,6 +25,7 @@
 		BAADE7C621C394DB006AC045 /* FocusOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE7C521C394DB006AC045 /* FocusOnViewController.swift */; };
 		BAADE7C821C394EB006AC045 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE7C721C394EB006AC045 /* MeViewController.swift */; };
 		BAADE7D021C3A30C006AC045 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE7CF21C3A30C006AC045 /* UIBarButtonItem-Extension.swift */; };
+		BAADE7D321C3AC22006AC045 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAADE7D221C3AC22006AC045 /* PageTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BAA6D7CD21C7757C00184429 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BAA6D7D121C791A600184429 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		BAADE78221C388AF006AC045 /* doYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAADE78521C388AF006AC045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAADE78721C388AF006AC045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +70,7 @@
 		BAADE7C521C394DB006AC045 /* FocusOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusOnViewController.swift; sourceTree = "<group>"; };
 		BAADE7C721C394EB006AC045 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		BAADE7CF21C3A30C006AC045 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		BAADE7D221C3AC22006AC045 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +226,7 @@
 		BAADE7CC21C39A6E006AC045 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BAADE7D121C3ABE2006AC045 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -228,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				BAADE7CE21C3A2A0006AC045 /* Extension */,
+				BAA6D7CD21C7757C00184429 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -236,8 +244,17 @@
 			isa = PBXGroup;
 			children = (
 				BAADE7CF21C3A30C006AC045 /* UIBarButtonItem-Extension.swift */,
+				BAA6D7D121C791A600184429 /* UIColor-Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BAADE7D121C3ABE2006AC045 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAADE7D221C3AC22006AC045 /* PageTitleView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,13 +392,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAADE7D321C3AC22006AC045 /* PageTitleView.swift in Sources */,
 				BAADE7C821C394EB006AC045 /* MeViewController.swift in Sources */,
 				BAADE78821C388AF006AC045 /* ViewController.swift in Sources */,
 				BAADE78621C388AF006AC045 /* AppDelegate.swift in Sources */,
+				BAA6D7CE21C7757C00184429 /* Common.swift in Sources */,
 				BAADE7C421C394C2006AC045 /* LiveViewController.swift in Sources */,
 				BAADE7C221C39484006AC045 /* HomeViewController.swift in Sources */,
 				BAADE7C621C394DB006AC045 /* FocusOnViewController.swift in Sources */,
 				BAADE7D021C3A30C006AC045 /* UIBarButtonItem-Extension.swift in Sources */,
+				BAA6D7D221C791A600184429 /* UIColor-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

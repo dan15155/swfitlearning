@@ -7,25 +7,38 @@
 //
 
 import UIKit
+private let kTitleViewH : CGFloat = 40
 
 class HomeViewController: UIViewController {
 
+    private lazy var pageTitleView : PageTitleView = {
+        
+        let titleFrame = CGRect(x: 0, y: kStatusBarH+KNavigationBar, width:kScreenW, height: kTitleViewH)
+        let titles = ["推荐","游戏","娱乐","趣玩"]
+        let titleView = PageTitleView(frame: titleFrame, titles:titles as [NSString])
+        //titleView?.backgroundColor = UIColor.purple
+        
+        return titleView!
+    }()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
           setupUI()
         // Do any additional setup after loading the view.
     }
-    
-
 }
 
 //设置ui界面
 extension HomeViewController{
     
     private func setupUI(){
-    
+        
+        //设置导航栏
         setupNavigationBar()
+        //add pageTitleView
+        view.addSubview(pageTitleView)
     }
     
     private func setupNavigationBar()
